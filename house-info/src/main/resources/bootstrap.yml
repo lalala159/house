@@ -1,0 +1,7 @@
+server:
+  port: 80
+spring:
+  application:
+    name: house-info
+  profiles:
+    active: @group@

@@ -1,0 +1,22 @@
+spring:
+  cloud:
+    nacos:
+      discovery:
+        server-addr: nacos.config.com:8848
+        namespace: 33671160-7b4a-453b-b4b9-ecbfd5bf7799
+        group: DEV_GROUP
+      config:
+        server-addr: nacos.config.com:8848
+        file-extension: yaml
+        group: DEV_GROUP
+        namespace: 33671160-7b4a-453b-b4b9-ecbfd5bf7799
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+pagehelper:
+  helperDialect: mysql
+  reasonable: true
+  supportMethodsArguments: true
+  pageSizeZero: false #pageSize=0
